@@ -16,6 +16,7 @@ const CryptoCurrencies = ({ simplified }) => {
       coin.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setCryptos(filteredData);
+    console.log(filteredData);
   }, [cryptoList, searchTerm]);
 
   if (isFetching) return "Loading... ";
@@ -32,8 +33,14 @@ const CryptoCurrencies = ({ simplified }) => {
       )}
       <Row gutter={[32, 32]} className="crypto-card-container">
         {cryptos?.map((currency) => (
-          <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency.id}>
-            <Link to={`/crypto/${currency.id}`}>
+          <Col
+            xs={24}
+            sm={12}
+            lg={6}
+            className="crypto-card"
+            key={currency.uuid}
+          >
+            <Link to={`/crypto/${currency.uuid}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
                 extra={
