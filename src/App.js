@@ -46,7 +46,7 @@ const App = () => {
             style={{ color: "white", textAlign: "center" }}
           >
             CryptoVerse <br />
-            All rights reserved
+            All rights reserved Yigit OZDAMAR 2022
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
