@@ -1,5 +1,8 @@
 
 <img width="1440" alt="Screen Shot 2022-03-25 at 17 42 44" src="https://user-images.githubusercontent.com/18688074/160143226-7e147877-20bc-4705-9670-3bd5a7ad8f3a.png">
+
+Firstly, you need to change the APIKEY inside the cryptoAPI.js file
+
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
